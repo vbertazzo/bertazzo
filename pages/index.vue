@@ -1,5 +1,16 @@
 <template>
-  <div class="min-h-screen flex flex-col justify-center items-center"></div>
+  <main
+    class="
+      bg-hero-topography
+      min-h-screen
+      flex flex-col
+      justify-center
+      items-center
+      p-4
+    "
+  >
+    <TheCard />
+  </main>
 </template>
 
 <script lang="ts">
