@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'personal-site',
+    title: 'Vitor Bertazzo',
     htmlAttrs: {
       lang: 'en',
     },
@@ -43,7 +43,7 @@ export default {
         component: 'fa',
         icons: {
           brands: ['faGithub', 'faLinkedinIn'],
-          solid: ['faPen'],
+          solid: ['faPen', 'faMoon', 'faSun'],
         },
       },
     ],

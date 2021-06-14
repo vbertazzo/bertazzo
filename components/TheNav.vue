@@ -3,10 +3,14 @@
     <a
       class="
         link
-        bg-hex-614BE1
+        bg-secondary-600
         hover:sm:bg-hex-7A64FA
-        focus-visible:(ring-hex-614BE1)
-        active:bg-hex-614BE1
+        focus-visible:(ring-secondary-600)
+        active:bg-secondary-600
+        dark:(bg-teal-700)
+        dark:hover:sm:bg-teal-600
+        dark:active:bg-teal-700
+        dark:focus-visible:(ring-teal-700)
       "
       href="https://github.com/vbertazzo"
     >
@@ -23,6 +27,10 @@
         hover:sm:bg-hex-9066FF
         focus-visible:(ring-hex-774DE6)
         active:bg-hex-774DE6
+        dark:(bg-teal-800)
+        dark:hover:sm:bg-teal-600
+        dark:active:bg-teal-800
+        dark:focus-visible:(ring-teal-800)
       "
       href="https://www.linkedin.com/in/vbertazzo"
     >
@@ -39,6 +47,10 @@
         hover:sm:bg-hex-A466FF
         focus-visible:(ring-hex-8B4DE6)
         active:bg-hex-8B4DE6
+        dark:(bg-teal-900)
+        dark:hover:sm:bg-teal-600
+        dark:active:bg-teal-900
+        dark:focus-visible:(ring-teal-900)
       "
       href="https://blog.vbertazzo.com"
     >
@@ -52,6 +64,6 @@
 
 <style lang="postcss" scoped>
 .link {
-  @apply h-13 w-full py-2 px-6 flex justify-between items-center rounded-full text-white focus-visible:(ring-2 ring-offset-2 ring-offset-white outline-none) transition ease-in-out duration-150 disabled:bg-blue-gray-500 focus:outline-none;
+  @apply h-13 w-full py-2 px-6 flex justify-between items-center rounded-full text-white focus-visible:(ring-2 ring-offset-2 ring-offset-white outline-none) transition ease-in-out duration-150 disabled:bg-blue-gray-500 focus:outline-none transition-colors duration-1000;
 }
 </style>

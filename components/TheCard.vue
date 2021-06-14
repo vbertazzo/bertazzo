@@ -13,10 +13,22 @@
         border
         shadow-2xl
         bg-white
+        transition-colors
+        duration-1000
         sm:(h-auto)
+        dark:(bg-blue-gray-800
+        border-blue-gray-700)
       "
     >
-      <section class="w-full py-10 border-b border-gray-200 sm:py-16">
+      <section
+        class="
+          w-full
+          py-10
+          border-b border-gray-200
+          sm:py-16
+          dark:border-blue-gray-700
+        "
+      >
         <h1
           class="
             title
@@ -29,6 +41,7 @@
             sm:(text-3xl
             font-normal)
             lg:(text-4xl)
+            dark:text-white
           "
         >
           Vitor Bertazzo
@@ -44,6 +57,7 @@
           items-center
           border-b border-gray-200
           sm:py-8
+          dark:border-blue-gray-700
         "
       >
         <h2
@@ -54,6 +68,7 @@
             text-center
             uppercase
             lg:text-xl
+            dark:text-white
           "
         >
           Front-end Developer
