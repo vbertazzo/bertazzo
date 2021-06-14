@@ -97,6 +97,7 @@ export default {
     '@nuxtjs/composition-api/module',
     '@nuxtjs/color-mode',
     '@nuxtjs/google-fonts',
+    'nuxt-speedkit',
     [
       '@nuxtjs/fontawesome',
       {
@@ -127,12 +128,42 @@ export default {
   },
 
   googleFonts: {
+    display: 'swap',
     prefetch: true,
     preconnect: true,
     preload: true,
     families: {
       Rubik: [400],
       Karla: [400],
+    },
+  },
+
+  speedkit: {
+    detection: {
+      performance: true,
+      browserSupport: true,
+    },
+    performance: {
+      device: {
+        hardwareConcurrency: { min: 2, max: 48 },
+        deviceMemory: { min: 2 },
+      },
+      timing: {
+        fcp: 800,
+        dcl: 1200,
+      },
+      lighthouseDetectionByUserAgent: false,
+    },
+
+    componentAutoImport: false,
+    componentPrefix: undefined,
+
+    /**
+     * IntersectionObserver rootMargin for Compoennts and Assets
+     */
+    lazyOffset: {
+      component: '0%',
+      asset: '0%',
     },
   },
 }
