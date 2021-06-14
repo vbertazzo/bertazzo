@@ -77,13 +77,7 @@ export default {
         content: 'https://vbertazzo.com/logo.jpg',
       },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@400;600&display=swap',
-      },
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -102,6 +96,7 @@ export default {
     'nuxt-windicss',
     '@nuxtjs/composition-api/module',
     '@nuxtjs/color-mode',
+    '@nuxtjs/google-fonts',
     [
       '@nuxtjs/fontawesome',
       {
@@ -129,5 +124,15 @@ export default {
     fallback: 'light',
     classSuffix: '',
     storageKey: 'nuxt-color-mode',
+  },
+
+  googleFonts: {
+    prefetch: true,
+    preconnect: true,
+    preload: true,
+    families: {
+      Rubik: [400],
+      Karla: [400],
+    },
   },
 }

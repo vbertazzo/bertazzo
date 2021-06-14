@@ -32,14 +32,12 @@
         <h1
           class="
             title
-            font-semibold
             text-xl text-primary-700
             uppercase
             tracking-widest
             text-center
             xs:text-2xl
-            sm:(text-3xl
-            font-normal)
+            sm:(text-3xl)
             lg:(text-4xl)
             dark:text-white
           "
