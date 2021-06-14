@@ -19,12 +19,12 @@ export default {
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'Vitor Bertazzo | Front-end Developer',
+        content: 'Vitor Bertazzo',
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: 'Front-end Developer | Vitor Bertazzo',
+        content: 'Front-end Developer',
       },
       {
         hid: 'twitter:image',
@@ -34,7 +34,7 @@ export default {
       {
         hid: 'twitter:card',
         name: 'twitter:card',
-        content: 'summary_large_image',
+        content: 'summary',
       },
       {
         hid: 'og:title',
@@ -101,6 +101,7 @@ export default {
     '@nuxt/typescript-build',
     'nuxt-windicss',
     '@nuxtjs/composition-api/module',
+    '@nuxtjs/color-mode',
     [
       '@nuxtjs/fontawesome',
       {
@@ -121,5 +122,12 @@ export default {
 
   generate: {
     interval: 2000,
+  },
+
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
+    classSuffix: '',
+    storageKey: 'nuxt-color-mode',
   },
 }

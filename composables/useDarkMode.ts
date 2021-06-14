@@ -1,28 +1,23 @@
+import { ColorModeInstance } from '@nuxtjs/color-mode/types/color-mode'
 import { onMounted, readonly, ref } from '@nuxtjs/composition-api'
 
 const isActive = ref(false)
 
 export default function useDarkMode() {
-  const toggleDarkMode = (value: boolean) => {
-    isActive.value = value
-    localStorage.setItem('theme', isActive.value ? 'dark' : 'light')
-    isActive.value
-      ? document.documentElement.classList.add('dark')
-      : document.documentElement.classList.remove('dark')
+  const toggleDarkMode = (colorMode: ColorModeInstance) => {
+    const isDarkSet = colorMode.preference === 'dark'
+    colorMode.preference = isDarkSet ? 'light' : 'dark'
+    isActive.value = !isDarkSet
   }
 
   const loadDarkMode = () => {
     if (
-      localStorage.theme === 'dark' ||
-      (!('theme' in localStorage) &&
+      localStorage.getItem('nuxt-color-mode') === 'dark' ||
+      (!('nuxt-color-mode' in localStorage) &&
         window.matchMedia('(prefers-color-scheme: dark)').matches)
     ) {
-      document.documentElement.classList.add('dark')
-      localStorage.setItem('theme', 'dark')
       isActive.value = true
     } else {
-      document.documentElement.classList.remove('dark')
-      localStorage.setItem('theme', 'light')
       isActive.value = false
     }
   }

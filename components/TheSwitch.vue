@@ -27,8 +27,8 @@
       aria-labelledby="switch-label"
       :class="isDarkModeOn ? 'bg-secondary-600' : 'bg-gray-400'"
       tabindex="0"
-      @click="handleSwitchChange"
-      @keydown.space="handleSwitchChange"
+      @click="handleSwitchChange($colorMode)"
+      @keydown.space="handleSwitchChange($colorMode)"
     >
       <div
         class="
@@ -55,13 +55,14 @@
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
 import useDarkMode from '@/composables/useDarkMode'
+import { ColorModeInstance } from '@nuxtjs/color-mode/types/color-mode'
 
 export default defineComponent({
   setup() {
     const { isDarkModeOn, toggleDarkMode } = useDarkMode()
 
-    const handleSwitchChange = () => {
-      toggleDarkMode(!isDarkModeOn.value)
+    const handleSwitchChange = (colorMode: ColorModeInstance) => {
+      toggleDarkMode(colorMode)
     }
 
     return {
