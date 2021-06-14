@@ -29,7 +29,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: '~/assets/logo.jpg',
+        content: 'https://vbertazzo.com/logo.jpg',
       },
       {
         hid: 'twitter:card',
@@ -69,12 +69,12 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '~/assets/logo.jpg',
+        content: 'https://vbertazzo.com/logo.jpg',
       },
       {
         hid: 'og:image:secure_url',
         property: 'og:image:secure_url',
-        content: '~/assets/logo.jpg',
+        content: 'https://vbertazzo.com/logo.jpg',
       },
     ],
     link: [
