@@ -20,11 +20,11 @@ export default {
       patterns: ['topography'],
       colors: {
         default: '#2D376A',
-        secondary: '#23D296',
+        secondary: '#614BE1',
       },
       opacity: {
         default: '0.15',
-        dark: '0.25',
+        dark: '0.30',
       },
     }),
   ],

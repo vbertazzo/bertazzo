@@ -7,14 +7,14 @@
       justify-center
       items-center
       p-4
-      dark:(bg-hero-topography-secondary
+      dark:(bg-hero-topography-secondary-dark
       bg-blue-gray-800)
       transition-colors
       duration-1000
     "
   >
     <TheCard />
-    <div class="absolute top-5 right-5">
+    <div class="absolute top-3 right-3 sm:(top-5 right-5)">
       <TheSwitch />
     </div>
   </main>
