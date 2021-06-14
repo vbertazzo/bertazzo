@@ -11,7 +11,71 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: `Front-end Developer | Vitor Bertazzo`,
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Vitor Bertazzo | Front-end Developer',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Front-end Developer | Vitor Bertazzo',
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: '~/assets/logo.jpg',
+      },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Vitor Bertazzo | Front-end Developer',
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://vbertazzo.com/',
+      },
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Front-end Developer | Vitor Bertazzo',
+      },
+      {
+        hid: 'og:locale',
+        property: 'og:locale',
+        content: 'en_US',
+      },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'vbertazzo | front-end developer',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '~/assets/logo.jpg',
+      },
+      {
+        hid: 'og:image:secure_url',
+        property: 'og:image:secure_url',
+        content: '~/assets/logo.jpg',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
