@@ -20,6 +20,7 @@
         transition-color
         duration-300
         ease-in-out
+        cursor-pointer
       "
       role="switch"
       :aria-checked="`${isDarkModeOn}`"
