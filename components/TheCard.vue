@@ -69,7 +69,7 @@
             dark:text-white
           "
         >
-          Front-end Developer
+          Web Developer
         </h2>
       </section>
 
